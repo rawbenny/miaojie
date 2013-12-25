@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>上海淼杰通信器材有限公司</title>
+<meta name="baidu-site-verification" content="zKHsx4H5ehxfAd0y">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="同步软件,同步手机,同步助手,手机助手,同步推电脑版下载,iPhone新手指南,教程,iPhone破解,周边,iPhone固件,iPhone软件,iPhone游戏,iPhone5, iPhone5S,iPhone5C"> 
+<meta name="description" content="同步网络官网提供同步助手,同步推,越狱助手,同步推电脑版等苹果管理/下载苹果软件游戏资源/苹果越狱的工具,免费官方下载,是您玩转苹果的最佳选择。"> 
+<link rel="shortcut icon" href="http://www.tongbu.com/favicon.ico">
+<style>
+	.about_icon {
+		float: left;
+		width: 35px;
+		height: 35px;
+		background: url('images/u.gif') -109px -186px no-repeat;
+		margin-right: 12px;
+		font-size: 14px;
+	}
+	.about_icon_j {
+		background-position: -143px -190px;
+		margin-top: 4px;
+	}
+</style>
+</head>
+<body>
+	<div style="width:100%;background:url(images/topbj.jpg)">
+		<div class="container clearfix header">
+		    <a href="#" target="_self" class="logo">同步网络官网</a>
+		    <a href="#" target="_self" class="title">同步网络官网</a>
+		    <div style="float:right;padding:30px 0">
+		    	<a href="index.html" target="_self" class="">回到首页</a>
+		    	| 
+		   		<a href="contact.html" target="_self" class="">联系我们</a>
+		    </div>
+		</div>
+	</div>
+	<div style="width:100%;height:50px;background: url(images/navbg.png);">
+		<div class="container clearfix">
+			<ul class="clearfix nav">
+		        <li class="nav_hover"><a href="http://www.tongbu.com/" target="_self">网站首页</a></li>
+		        <li><a href="http://www.tongbu.com/zhushou/">关于我们</a></li>
+		        <li><a href="http://tui.tongbu.com/">产品展示</a></li>
+				<li><a href="http://www.tongbu.com/h5.html">荣誉资质</a></li>
+		        <li><a href="http://app.tongbu.com/">联系我们</a></li>
+		    </ul>
+		</div>
+	</div>
+<div class="banner">
+    <div style="margin-left: -750px;" class="banner_wrap">
+				<ul style="width: 5880px; left: 0px;" class="banner_ul clearfix">
+					<li id="ad4">
+						<a href="http://tui.tongbu.com/"><img src="images/banner5.png"></a>
+					</li>
+					<li id="ad1">
+						<a href="http://tui.tongbu.com/"><img src="images/banner3.png"></a>
+					</li>
+					<li id="ad2">
+						<a href="http://www.tongbu.com/mac/"><img src="images/banner4.png"></a>
+					</li>
+					<li id="ad3">
+						<a href="http://www.tongbu.com/zhushou/"><img src="images/banner2.png"></a>
+					</li>
+				</ul>
+			</div>
+    <div style="width: 230px;" class="banner_lmask"></div>
+    <div style="width: 230px; left: 1210px;" class="banner_rmask"></div>
+    <a style="left: 180px;" href="javascript:;" target="_self" class="banner_prev"></a>
+    <a style="left: 1230px;" href="javascript:;" target="_self" class="banner_next"></a>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+
+		var ad = ["images/banner2.png", "images/banner3.png", "images/banner5.png",  "images/banner4.png"];
+
+		var im4 = new Image;
+		im4.onload = function() {
+			$("#ad2").html("<img src='" + im4.src + "' />");
+		}
+		im4.src = ad[4];
+
+		var im0 = new Image;
+		im0.onload = function() {
+			$("#ad3").html("<img src='" + im0.src + "' />");
+		};
+		im0.src = ad[0];
+
+		var im1 = new Image;
+		im1.onload = function() {
+			$("#ad1").html("<img src='" + im1.src + "' />");
+		};
+		im1.src = ad[1];
+
+		var im2 = new Image;
+		im2.onload = function() {
+			$("#ad4").html("<img src='" + im2.src + "' />");
+		};
+		im2.src = ad[2];
+
+		var im3 = new Image;
+		im3.onload = function() {
+			$("#ad2").html("<img src='" + im3.src + "' />");
+		};
+		im3.src = ad[3];
+		var Banner = function() {
+			var t = this;
+			t.bw = $('.banner_wrap');
+			t.ul = t.bw.children('.banner_ul');
+			t.lm = $('.banner_lmask');
+			t.rm = $('.banner_rmask');
+			t.prevBtn = $('.banner_prev');
+			t.nextBtn = $('.banner_next');
+			t.m = ($(window).width() - 980) / 2;
+			t.move = false;
+			t.act = null;
+			t.timer = setTimeout(function() {
+				t.init();
+			}, 4000);
+			//bind event
+			$(window).bind("resize", function() {
+				t.m = ($(window).width() - 980) / 2;
+				t.resize();
+			});
+			$('.banner').bind({
+				"mouseenter" : function() {
+					clearTimeout(t.timer);
+				},
+				"mouseleave" : function() {
+					clearTimeout(t.timer);
+					t.timer = setTimeout(function() {
+						t.init();
+					}, 4000);
+				}
+			});
+			t.nextBtn.bind("click", function() {
+				if (t.move == false) {
+					t.next();
+				}
+			});
+			t.prevBtn.bind("click", function() {
+				if (t.move == false) {
+					t.prev();
+				}
+			});
+			t.rm.bind("click", function() {
+				if (t.move == false) {
+					t.next();
+				}
+			});
+			t.lm.bind("click", function() {
+				if (t.move == false) {
+					t.prev();
+				}
+			});
+			t.resize();
+
+		};
+		Banner.prototype = {
+			init : function() {
+				var t = this;
+				t.resize();
+				t.next();
+				clearTimeout(t.timer);
+				t.timer = setTimeout(function() {
+					t.init();
+				}, 4000);
+			},
+			next : function() {
+				var t = this;
+				t.move = true;
+				var uf = t.ul.children('li:first');
+				var ufc = uf.clone();
+				t.ul.append(ufc).animate({
+					"left" : "-980"
+				}, 250, function() {
+					uf.remove();
+					t.ul.css("left", "0");
+					t.move = false;
+				});
+			},
+			prev : function() {
+				var t = this;
+				t.move = true;
+				var ue = t.ul.children('li:last');
+				var uec = ue.clone();
+				t.ul.css('left', '-980px').prepend(uec).animate({
+					"left" : "0"
+				}, 250, function() {
+					ue.remove();
+					t.move = false;
+				});
+			},
+			stop : function() {
+				clearTimeout(this.timer);
+				this.timer = null;
+			},
+			resize : function() {
+				var t = this;
+				t.ul.css("width", (t.ul.children('li').length + 1) * 980 + "px");
+				t.bw.css("margin-left", "-" + (980 - t.m) + "px");
+				t.lm.css("width", t.m + "px");
+				t.rm.css({
+					"width" : t.m + "px",
+					"left" : (980 + t.m) + "px"
+				});
+				t.prevBtn.css("left", (t.m - 50) + "px");
+				t.nextBtn.css("left", (t.m + 1000) + "px");
+			}
+		};
+		var banner = new Banner();
+
+	});
+</script>
+
+</body></html>
