@@ -29,6 +29,6 @@ public class Main extends HttpServlet {
 
 		context.addServlet(new ServletHolder(new Main()), "/Hello");
 		server.start();
-		server.join();
+		server.join();  
 	}
 }
