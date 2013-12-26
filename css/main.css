@@ -101,6 +101,32 @@ ol, ul {
 	height: 50px;
 	background: url(../images/navbg.png);
 }
+.intro p{
+	text-indent: 24pt;
+	font-size: 12pt;
+}
+.section-box{
+	border:1px solid rgb(228, 228, 228);
+	width:663px;
+	height:500px;
+}
+.section-title{
+	background: url(../images/sectionbg.jpg);
+	background-repeat: repeat-x;
+	height:36px;
+	line-height: 36px;
+	width:100%;
+	font-size:16px;
+}
+.section-image{
+	float:left;
+	margin-right:10px;
+}
+.section-content{
+	padding:10px;
+}
+.section-inner-content{
+}
 
 body, .nav, .app_t, h2, .appdetail_n, .appdetail_n h3, .appdetail_s, .applist .app_more, .search_ent, .search_w, .prod_iw h1, .prod_iw h3, .prod_iw p, .prod_iw sup, .footer h5, .side_left, .article_t, .zs_banner, .zs_down span, .zs_pro li, .zs_pro_i h3, .open_use h3, .open_use h3, .open_tour_t h4, #auto_code, .dev_s h3, .context h2 {
 	font-family: 微软雅黑,tahoma,arial,宋体;
