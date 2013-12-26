@@ -30,7 +30,7 @@ body,.nav,.app_t,h2,.appdetail_n,.appdetail_n h3,.appdetail_s,.applist .app_more
 .nav{float:left;font-size: 16px;margin-top: 10px}
 .nav li{float:left;margin-right:13px;height:30px;line-height: 30px;_margin-right:10px;}
 .nav a{display: block;padding:0 10px;position: relative;_padding-top:5px}
-.nav_hover a{background:#ECECEC;border-radius: 3px}
+.nav_hover a{background:url(../images/bg2.png);border-radius: 3px}
 .nav_app{width:85px;_width:90px}
 .nav_app span{display:block;float:left;width:25px;height:25px;background:url('../images/u.gif') -3px -160px no-repeat;_margin-top:5px}
 .nav_zs{width: 92px}
