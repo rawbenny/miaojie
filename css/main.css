@@ -127,7 +127,32 @@ ol, ul {
 }
 .section-inner-content{
 }
-
+.ptile{
+	background:rgb(220, 223, 225);
+	height:248px;
+	width:217px;
+	float:left;
+	padding:12px;
+	box-sizing: border-box;
+	margin-right:20px;
+}
+.ptile-container{
+	padding:15px 20px;
+}
+.ptile-container .ptile:last-child{
+	margin-right:0;
+}
+.ptile-desc{
+	
+}
+.ptile-image{
+	
+}
+.ptile-title{
+	font-size: 14px;
+	color: rgb(79, 183, 223);
+	padding:5px 0;
+}
 body, .nav, .app_t, h2, .appdetail_n, .appdetail_n h3, .appdetail_s, .applist .app_more, .search_ent, .search_w, .prod_iw h1, .prod_iw h3, .prod_iw p, .prod_iw sup, .footer h5, .side_left, .article_t, .zs_banner, .zs_down span, .zs_pro li, .zs_pro_i h3, .open_use h3, .open_use h3, .open_tour_t h4, #auto_code, .dev_s h3, .context h2 {
 	font-family: 微软雅黑,tahoma,arial,宋体;
 }

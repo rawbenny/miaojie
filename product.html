@@ -34,173 +34,58 @@
 		    </ul>
 		</div>
 	</div>
-<div class="banner">
-    <div style="margin-left: -750px;" class="banner_wrap">
-				<ul style="width: 5880px; left: 0px;" class="banner_ul clearfix">
-					<li id="ad4">
-						<a href=""><img src="images/banner5.png"></a>
-					</li>
-					<li id="ad1">
-						<a href=""><img src="images/banner3.png"></a>
-					</li>
-					<li id="ad2">
-						<a href=""><img src="images/banner4.png"></a>
-					</li>
-					<li id="ad3">
-						<a href=""><img src="images/banner2.png"></a>
-					</li>
-				</ul>
+	<div class="container clearfix">
+		<div class="ptile-container clearfix">
+			<div class="ptile">
+				<div class="ptile-image">
+					<img src="images/ptileimage1.png"/>
+				</div>
+				<div class="ptile-title">
+					<strong>PE顶管</strong>
+				</div>
+				<div class="ptile-desc">
+					可广泛用于室外通信电缆和光缆的护套管道系统，包括局间中继管道、馈线管道、配线管道和专用网管道以及特殊规定的长途通信管道。
+				</div>
 			</div>
-    <div style="width: 230px;" class="banner_lmask"></div>
-    <div style="width: 230px; left: 1210px;" class="banner_rmask"></div>
-    <a style="left: 180px;" href="javascript:;" target="_self" class="banner_prev"></a>
-    <a style="left: 1230px;" href="javascript:;" target="_self" class="banner_next"></a>
-</div>
+			<div class="ptile">
+				<div class="ptile-image">
+					<img src="images/ptileimage1.jpg"/>
+				</div>
+				<div class="ptile-title">
+					<strong>PE顶管</strong>
+				</div>
+				<div class="ptile-desc">
+					可广泛用于室外通信电缆和光缆的护套管道系统，包括局间中继管道、馈线管道、配线管道和专用网管道以及特殊规定的长途通信管道。
+				</div>
+			</div>
+			<div class="ptile">
+				<div class="ptile-image">
+					<img src="images/ptileimage1.jpg"/>
+				</div>
+				<div class="ptile-title">
+					PE顶管
+				</div>
+				<div class="ptile-desc">
+					微动开关是一种施压促动的快速开关，又叫灵敏开关。一种行程很小的、瞬时动作的主令电器
+				</div>
+			</div>
+			<div class="ptile">
+				<div class="ptile-image">
+					<img src="images/ptileimage1.jpg"/>
+				</div>
+				<div class="ptile-title">
+					PE顶管
+				</div>
+				<div class="ptile-desc">
+					微动开关是一种施压促动的快速开关，又叫灵敏开关。一种行程很小的、瞬时动作的主令电器
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
-	$(function() {
 
-		var ad = ["images/banner2.png", "images/banner3.png", "images/banner5.png",  "images/banner4.png"];
-
-		var im4 = new Image;
-		im4.onload = function() {
-			$("#ad2").html("<img src='" + im4.src + "' />");
-		};
-		im4.src = ad[4];
-
-		var im0 = new Image;
-		im0.onload = function() {
-			$("#ad3").html("<img src='" + im0.src + "' />");
-		};
-		im0.src = ad[0];
-
-		var im1 = new Image;
-		im1.onload = function() {
-			$("#ad1").html("<img src='" + im1.src + "' />");
-		};
-		im1.src = ad[1];
-
-		var im2 = new Image;
-		im2.onload = function() {
-			$("#ad4").html("<img src='" + im2.src + "' />");
-		};
-		im2.src = ad[2];
-
-		var im3 = new Image;
-		im3.onload = function() {
-			$("#ad2").html("<img src='" + im3.src + "' />");
-		};
-		im3.src = ad[3];
-		var Banner = function() {
-			var t = this;
-			t.bw = $('.banner_wrap');
-			t.ul = t.bw.children('.banner_ul');
-			t.lm = $('.banner_lmask');
-			t.rm = $('.banner_rmask');
-			t.prevBtn = $('.banner_prev');
-			t.nextBtn = $('.banner_next');
-			t.m = ($(window).width() - 980) / 2;
-			t.move = false;
-			t.act = null;
-			t.timer = setTimeout(function() {
-				t.init();
-			}, 4000);
-			//bind event
-			$(window).bind("resize", function() {
-				t.m = ($(window).width() - 980) / 2;
-				t.resize();
-			});
-			$('.banner').bind({
-				"mouseenter" : function() {
-					clearTimeout(t.timer);
-				},
-				"mouseleave" : function() {
-					clearTimeout(t.timer);
-					t.timer = setTimeout(function() {
-						t.init();
-					}, 4000);
-				}
-			});
-			t.nextBtn.bind("click", function() {
-				if (t.move == false) {
-					t.next();
-				}
-			});
-			t.prevBtn.bind("click", function() {
-				if (t.move == false) {
-					t.prev();
-				}
-			});
-			t.rm.bind("click", function() {
-				if (t.move == false) {
-					t.next();
-				}
-			});
-			t.lm.bind("click", function() {
-				if (t.move == false) {
-					t.prev();
-				}
-			});
-			t.resize();
-
-		};
-		Banner.prototype = {
-			init : function() {
-				var t = this;
-				t.resize();
-				t.next();
-				clearTimeout(t.timer);
-				t.timer = setTimeout(function() {
-					t.init();
-				}, 4000);
-			},
-			next : function() {
-				var t = this;
-				t.move = true;
-				var uf = t.ul.children('li:first');
-				var ufc = uf.clone();
-				t.ul.append(ufc).animate({
-					"left" : "-980"
-				}, 250, function() {
-					uf.remove();
-					t.ul.css("left", "0");
-					t.move = false;
-				});
-			},
-			prev : function() {
-				var t = this;
-				t.move = true;
-				var ue = t.ul.children('li:last');
-				var uec = ue.clone();
-				t.ul.css('left', '-980px').prepend(uec).animate({
-					"left" : "0"
-				}, 250, function() {
-					ue.remove();
-					t.move = false;
-				});
-			},
-			stop : function() {
-				clearTimeout(this.timer);
-				this.timer = null;
-			},
-			resize : function() {
-				var t = this;
-				t.ul.css("width", (t.ul.children('li').length + 1) * 980 + "px");
-				t.bw.css("margin-left", "-" + (980 - t.m) + "px");
-				t.lm.css("width", t.m + "px");
-				t.rm.css({
-					"width" : t.m + "px",
-					"left" : (980 + t.m) + "px"
-				});
-				t.prevBtn.css("left", (t.m - 50) + "px");
-				t.nextBtn.css("left", (t.m + 1000) + "px");
-			}
-		};
-		var banner = new Banner();
-
-	});
-</script>
 
 </body></html>
